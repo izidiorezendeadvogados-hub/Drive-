@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Avaliação N1 - Direito Civil I</title>
+<style>
+  @page { size: A4; margin: 0.9cm 0 0.9cm 0; }
+  html, body { margin: 0; padding: 0; }
+  body { font-family: Calibri, "Segoe UI", Arial, sans-serif; font-size: 11pt; line-height: 1.15; color: #000; }
+  .pgborder { position: fixed; top: 0; bottom: 0; left: 0.85cm; right: 0.85cm; border: 1px dotted #000; }
+  table.wrap { width: 100%; border-collapse: collapse; }
+  table.wrap > thead > tr > td, table.wrap > tfoot > tr > td { height: 0.5cm; padding: 0; }
+  table.wrap > tbody > tr > td { padding: 0 1.35cm; vertical-align: top; }
+
+  /* cabeçalho do Anexo C */
+  .logo { text-align: center; margin: 0.15cm 0 0.25cm 0; }
+  .logo img { width: 5.85cm; height: 1.92cm; }
+  table.cab { width: 100%; border-collapse: separate; border-spacing: 0.08cm 0; table-layout: fixed; margin-bottom: 0.2cm; }
+  table.cab td { border: 0.75pt solid #000; padding: 0.08cm 0.15cm; vertical-align: top; font-size: 10pt; }
+  table.cab td.r1 { height: 1.0cm; }
+  table.cab td.r2 { height: 1.25cm; }
+  table.cab td b { font-weight: bold; }
+  table.cab td .v { display: block; font-weight: normal; font-size: 10.5pt; margin-top: 0.05cm; }
+  .chk { font-weight: bold; white-space: nowrap; font-size: 9.5pt; }
+
+  .obs { margin: 0.1cm 0 0.25cm 0; }
+  .obs p { margin: 0 0 0.05cm 0; font-weight: bold; }
+  table.obs { width: 100%; border-collapse: collapse; }
+  table.obs td { width: 50%; padding: 0.02cm 0.15cm 0.02cm 0; font-weight: bold; font-size: 10.5pt; vertical-align: top; }
+
+  .instr { border: 0.75pt solid #000; padding: 0.15cm 0.3cm; font-size: 10pt; margin: 0.2cm 0 0.4cm 0; }
+  .instr p { margin: 0 0 0.05cm 0; }
+  .instr ol { margin: 0.05cm 0 0 0.5cm; padding: 0; }
+  .instr li { margin-bottom: 0.05cm; }
+
+  h2 { font-size: 11.5pt; text-transform: uppercase; margin: 0.45cm 0 0.25cm 0; border-bottom: 0.75pt solid #000; padding-bottom: 0.05cm; break-after: avoid; }
+  .q { margin-bottom: 0.35cm; break-inside: avoid; }
+  .q .enun { text-align: justify; margin: 0 0 0.12cm 0; }
+  .q .alt { margin: 0 0 0.06cm 0.5cm; text-indent: -0.5cm; text-align: justify; }
+  .disc .item { margin: 0.15cm 0 0.1cm 0; text-align: justify; }
+  .linhas { margin-top: 0.15cm; }
+  .linhas div { border-bottom: 0.6pt solid #555; height: 0.62cm; }
+  table.cartao { border-collapse: collapse; margin: 0.2cm auto 0 auto; font-size: 10.5pt; }
+  table.cartao th, table.cartao td { border: 0.75pt solid #000; padding: 0.12cm 0.35cm; text-align: center; }
+  table.cartao th { background: #e6e6e6; }
+  table.cartao td.n { font-weight: bold; }
+  .circ { display: inline-block; width: 0.42cm; height: 0.42cm; border: 0.9pt solid #000; border-radius: 50%; }
+  table.ass { width: 100%; border-collapse: collapse; margin-top: 0.9cm; font-size: 10.5pt; }
+  table.ass td { border: 0.75pt solid #000; padding: 0.15cm 0.2cm; vertical-align: bottom; }
+  .pb { break-before: page; }
+  .nota { font-size: 9.5pt; text-align: center; margin: 0.1cm 0 0 0; }
+  .fim { text-align: right; font-weight: bold; margin-top: 0.6cm; }
+
+  .gab { border: 0.75pt solid #000; padding: 0.2cm 0.3cm; margin-bottom: 0.3cm; break-inside: avoid; text-align: justify; }
+  .gab p { margin: 0 0 0.1cm 0; }
+  .gab .t { font-weight: bold; }
+  table.resp { border-collapse: collapse; width: 100%; font-size: 10.5pt; margin-bottom: 0.3cm; }
+  table.resp th, table.resp td { border: 0.75pt solid #000; padding: 0.1cm 0.2cm; vertical-align: top; text-align: left; }
+  table.resp th { background: #e6e6e6; }
+  table.resp td.c { text-align: center; font-weight: bold; width: 1.4cm; }
+</style>
+</head>
+<body>
+<div class="pgborder"></div>
+<table class="wrap">
+<thead><tr><td></td></tr></thead>
+<tfoot><tr><td></td></tr></tfoot>
+<tbody><tr><td>
+
+<div class="logo"><img src="data:image/png;base64,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" alt="UnirG - Universidade de Gurupi"></div>
+
+<table class="cab">
+  <colgroup><col style="width:43%"><col style="width:23%"><col style="width:34%"></colgroup>
+  <tr>
+    <td class="r1"><b>Curso</b><span class="v">Direito</span></td>
+    <td class="r1"><b>Turno/Turma:</b><span class="v">Matutino – 1º Período</span></td>
+    <td class="r1"><span class="chk">P1 [ X ]&nbsp;&nbsp;&nbsp;P2 [&nbsp;&nbsp;&nbsp;]&nbsp;&nbsp;&nbsp;2ª CH [&nbsp;&nbsp;&nbsp;]&nbsp;&nbsp;&nbsp;PF [&nbsp;&nbsp;&nbsp;]</span></td>
+  </tr>
+</table>
+
+<table class="cab">
+  <colgroup><col style="width:52%"><col style="width:30%"><col style="width:18%"></colgroup>
+  <tr>
+    <td class="r2"><b>Acadêmico (a):</b></td>
+    <td class="r2"><b>Assinatura</b></td>
+    <td class="r2"><b>Matrícula</b></td>
+  </tr>
+</table>
+<table class="cab">
+  <colgroup><col style="width:31%"><col style="width:31%"><col style="width:16%"><col style="width:22%"></colgroup>
+  <tr>
+    <td class="r2"><b>Componente Curricular (Disciplina):</b><span class="v">Direito Civil I</span></td>
+    <td class="r2"><b>Professor(a):</b><span class="v">Paulo Izidio da Silva Rezende</span></td>
+    <td class="r2"><b>Data</b><span class="v">____/____/2026</span></td>
+    <td class="r2"><b>Nota</b></td>
+  </tr>
+</table>
+
+<div class="obs">
+  <p>Observações:</p>
+  <table class="obs">
+    <tr><td>1 – Leia toda a questão antes de responder;</td><td>3 – Rasura e uso de corretivo anulam a questão;</td></tr>
+    <tr><td>2 – Use caneta esferográfica azul ou preta;</td><td>4 – Resposta a lápis perde o direito de revisão.</td></tr>
+  </table>
+</div>
+
+<div class="instr">
+  <p><b>Instruções da avaliação — N1</b></p>
+  <ol>
+    <li>A prova contém <b>8 (oito) questões objetivas</b>, com quatro alternativas cada, e <b>2 (duas) questões discursivas</b>.</li>
+    <li>Conteúdo: <b>arts. 1º a 6º da Lei de Introdução às Normas do Direito Brasileiro (LINDB)</b> e <b>arts. 1º a 39 do Código Civil</b>.</li>
+    <li><b>É permitida a consulta à legislação seca</b> (texto de lei sem anotações, comentários, doutrina ou jurisprudência). Não é permitido emprestar material durante a prova.</li>
+    <li>Nas questões objetivas, há apenas <b>uma</b> alternativa correta. Marque a resposta no <b>cartão-resposta</b> ao final da prova. Questão com mais de uma marcação, rasura ou sem marcação será anulada.</li>
+    <li>Nas questões discursivas, responda com <b>fundamentação jurídica</b>, indicando os dispositivos legais aplicáveis. A mera citação do artigo sem explicação não pontua integralmente.</li>
+    <li>Valor da prova: <b>10,0 pontos</b>. Questões objetivas: 0,75 ponto cada (6,00). Questões discursivas: 2,00 pontos cada (4,00).</li>
+  </ol>
+</div>
+
+<h2 style="margin-top:0.2cm">Parte I — Questões objetivas</h2>
+
+<div class="q">
+  <p class="enun"><b>Questão 1.</b> Joana leu no Diário Oficial a publicação de uma nova lei federal. O texto da lei não traz nenhuma regra sobre a data em que começará a valer. De acordo com o art. 1º da Lei de Introdução às Normas do Direito Brasileiro (LINDB), assinale a alternativa correta.</p>
+  <p class="alt">(A) A lei entra em vigor na data da sua publicação, em todo o território nacional.</p>
+  <p class="alt">(B) A lei entra em vigor 30 (trinta) dias depois de publicada, no Brasil e no exterior.</p>
+  <p class="alt">(C) A lei começa a vigorar em todo o país 45 (quarenta e cinco) dias depois de oficialmente publicada e, nos Estados estrangeiros, quando admitida a sua obrigatoriedade, 3 (três) meses depois de oficialmente publicada.</p>
+  <p class="alt">(D) A lei só entra em vigor depois de regulamentada por decreto do Presidente da República.</p>
+</div>
+<div class="q">
+  <p class="enun"><b>Questão 2.</b> Em um processo, o juiz percebe que não existe nenhuma lei que trate especificamente do caso que precisa julgar. Segundo a LINDB, assinale a alternativa correta.</p>
+  <p class="alt">(A) Quando a lei for omissa, o juiz decidirá o caso de acordo com a analogia, os costumes e os princípios gerais de direito (art. 4º).</p>
+  <p class="alt">(B) Diante da omissão da lei, o juiz deve extinguir o processo sem julgamento, até que o Congresso Nacional edite lei sobre o tema.</p>
+  <p class="alt">(C) O juiz pode deixar de julgar o caso, e as partes podem deixar de cumprir a lei que alegarem não conhecer.</p>
+  <p class="alt">(D) Quando a lei for omissa, o juiz deve aplicar sempre a lei estrangeira que trate do assunto.</p>
+</div>
+<div class="q">
+  <p class="enun"><b>Questão 3.</b> Carlos e Pedro celebraram e cumpriram integralmente um contrato em 2024. Em 2026, entrou em vigor uma lei nova que passou a exigir requisitos diferentes para esse tipo de contrato. Com base no art. 6º da LINDB, assinale a alternativa correta.</p>
+  <p class="alt">(A) A lei nova retroage obrigatoriamente e torna nulo o contrato celebrado em 2024.</p>
+  <p class="alt">(B) A lei nova só pode ser aplicada depois de 10 (dez) anos de vigência.</p>
+  <p class="alt">(C) A lei nova não tem efeito sobre nenhum contrato, nem sobre os celebrados depois de sua vigência.</p>
+  <p class="alt">(D) A lei em vigor terá efeito imediato e geral, respeitados o ato jurídico perfeito, o direito adquirido e a coisa julgada. Por isso, o contrato já consumado em 2024 deve ser preservado.</p>
+</div>
+<div class="q">
+  <p class="enun"><b>Questão 4.</b> Na mesma família vivem Lucas, de 15 anos; sua irmã Júlia, de 17 anos; e o tio deles, Pedro, de 40 anos, ébrio habitual. Considerando os arts. 3º e 4º do Código Civil, assinale a alternativa correta.</p>
+  <p class="alt">(A) Lucas, Júlia e Pedro são absolutamente incapazes de exercer pessoalmente os atos da vida civil.</p>
+  <p class="alt">(B) Lucas é absolutamente incapaz, por ser menor de 16 anos. Júlia e Pedro são relativamente incapazes a certos atos ou à maneira de os exercer.</p>
+  <p class="alt">(C) Lucas e Júlia são relativamente incapazes, e Pedro é absolutamente incapaz.</p>
+  <p class="alt">(D) Somente Pedro é incapaz, pois a menoridade não gera incapacidade no Código Civil.</p>
+</div>
+<div class="q">
+  <p class="enun"><b>Questão 5.</b> Ana tem 16 anos completos. Seus pais, de comum acordo, desejam emancipá-la para que ela possa administrar sozinha um pequeno negócio. De acordo com o art. 5º do Código Civil, assinale a alternativa correta.</p>
+  <p class="alt">(A) A emancipação só é possível quando Ana completar 17 anos.</p>
+  <p class="alt">(B) A emancipação concedida pelos pais depende sempre de sentença judicial, ouvido o tutor.</p>
+  <p class="alt">(C) Os pais, ou um deles na falta do outro, podem conceder a emancipação mediante instrumento público, independentemente de homologação judicial.</p>
+  <p class="alt">(D) A única forma de Ana se tornar plenamente capaz antes dos 18 anos é pelo casamento.</p>
+</div>
+<div class="q">
+  <p class="enun"><b>Questão 6.</b> Roberto, de 30 anos, deseja deixar registrado que, após sua morte, seus órgãos sejam doados para transplante. Ele pergunta se poderá receber algum valor por isso e se poderá mudar de ideia depois. Com base nos arts. 11 e 14 do Código Civil, assinale a alternativa correta.</p>
+  <p class="alt">(A) É válida, com objetivo científico ou altruístico, a disposição gratuita do próprio corpo, no todo ou em parte, para depois da morte, e esse ato pode ser livremente revogado a qualquer tempo.</p>
+  <p class="alt">(B) A disposição do próprio corpo para depois da morte pode ser onerosa, desde que o valor seja pago aos herdeiros.</p>
+  <p class="alt">(C) Uma vez feita a disposição, Roberto não poderá mais revogá-la.</p>
+  <p class="alt">(D) Os direitos da personalidade são transmissíveis e renunciáveis, por isso Roberto pode vender seus órgãos em vida.</p>
+</div>
+<div class="q">
+  <p class="enun"><b>Questão 7.</b> Um pequeno avião que fazia o trajeto entre Gurupi e Palmas caiu em uma área de mata fechada. Foram encontrados os destroços, mas o corpo do piloto Marcos nunca foi localizado. As buscas oficiais foram encerradas. Com base no art. 7º do Código Civil, assinale a alternativa correta.</p>
+  <p class="alt">(A) A família de Marcos deve aguardar 10 (dez) anos para pedir qualquer providência judicial.</p>
+  <p class="alt">(B) Como o corpo não foi encontrado, Marcos será considerado vivo para todos os efeitos, sem prazo.</p>
+  <p class="alt">(C) A família só pode pedir a declaração de ausência, e a morte de Marcos nunca poderá ser presumida.</p>
+  <p class="alt">(D) Pode ser declarada a morte presumida sem decretação de ausência, pois era extremamente provável a morte de quem estava em perigo de vida. A declaração só pode ser requerida depois de esgotadas as buscas e averiguações, e a sentença deve fixar a data provável do falecimento.</p>
+</div>
+<div class="q">
+  <p class="enun"><b>Questão 8.</b> José desapareceu do seu domicílio sem deixar notícias e sem deixar representante ou procurador para administrar seus bens. De acordo com o art. 22 do Código Civil, assinale a alternativa correta.</p>
+  <p class="alt">(A) Somente a esposa de José pode pedir alguma providência, e apenas depois de 10 (dez) anos do desaparecimento.</p>
+  <p class="alt">(B) A requerimento de qualquer interessado ou do Ministério Público, o juiz declarará a ausência e nomeará curador para os bens de José.</p>
+  <p class="alt">(C) O juiz deve declarar imediatamente a morte de José e abrir a sucessão definitiva.</p>
+  <p class="alt">(D) Os bens de José passam imediatamente ao Município em que estiverem localizados.</p>
+</div>
+<h2 class="pb">Parte II — Questões discursivas</h2>
+<div class="q disc">
+  <p class="enun"><b>Questão 9 — Vigência da lei</b> <i>(Valor: 2,00)</i></p>
+  <p class="enun">Uma lei federal foi publicada no Diário Oficial da União em 02/03/2026. O texto não indica a data de início de sua vigência. Durante o período de <i>vacatio legis</i>, o Congresso Nacional percebeu um erro no texto e promoveu nova publicação para corrigi-lo. Meses depois, já com a lei em vigor, outro trecho também foi corrigido.</p>
+  <p class="enun">Considerando os arts. 1º e 2º da LINDB, responda aos itens a seguir, indicando os dispositivos legais aplicáveis.</p>
+  <p class="item"><b>A)</b> Quando essa lei entra em vigor no Brasil? E nos Estados estrangeiros, quando admitida a sua obrigatoriedade? <i>(Valor: 0,80)</i></p>
+  <div class="linhas"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  <p class="item"><b>B)</b> Qual é o efeito da nova publicação feita antes de a lei entrar em vigor? E como se considera a correção feita depois que a lei já estava em vigor? <i>(Valor: 0,60)</i></p>
+  <div class="linhas"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  <p class="item"><b>C)</b> Se uma lei revogada voltar a ser necessária, ela se restaura automaticamente quando a lei que a revogou também perde a vigência? <i>(Valor: 0,60)</i></p>
+  <div class="linhas"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
+<div class="q disc" style="break-before: page;">
+  <p class="enun"><b>Questão 10 — Ausência e morte presumida</b> <i>(Valor: 2,00)</i></p>
+  <p class="enun">Ricardo, morador de Gurupi/TO, desapareceu em janeiro de 2024 sem deixar notícias e sem deixar procurador. Ele é casado com Maria, com quem vivia normalmente até o desaparecimento, e tem dois filhos maiores de idade. A pedido de Maria, o juiz declarou a ausência, e os bens de Ricardo foram arrecadados em março de 2024.</p>
+  <p class="enun">Com base nos arts. 6º e 22 a 39 do Código Civil, responda aos itens a seguir, indicando os dispositivos legais aplicáveis.</p>
+  <p class="item"><b>A)</b> Quem deve ser nomeado curador dos bens de Ricardo? Justifique. <i>(Valor: 0,60)</i></p>
+  <div class="linhas"><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  <p class="item"><b>B)</b> A partir de quando pode ser requerida a abertura da sucessão provisória? Cite dois legitimados para fazer esse pedido. <i>(Valor: 0,70)</i></p>
+  <div class="linhas"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  <p class="item"><b>C)</b> Quando poderá ser requerida a sucessão definitiva? Qual efeito ela produz quanto à morte de Ricardo? <i>(Valor: 0,70)</i></p>
+  <div class="linhas"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
+<h2 class="pb">Cartão-resposta — Questões objetivas</h2>
+<p class="nota">Preencha completamente o círculo correspondente à alternativa escolhida. Somente o cartão-resposta será considerado na correção das questões objetivas.</p>
+<table class="cartao">
+  <tr><th>Questão</th><th>A</th><th>B</th><th>C</th><th>D</th></tr>
+  <tr><td class="n">1</td><td><span class="circ"></span></td><td><span class="circ"></span></td><td><span class="circ"></span></td><td><span class="circ"></span></td></tr>
+  <tr><td class="n">2</td><td><span class="circ"></span></td><td><span class="circ"></span></td><td><span class="circ"></span></td><td><span class="circ"></span></td></tr>
+  <tr><td class="n">3</td><td><span class="circ"></span></td><td><span class="circ"></span></td><td><span class="circ"></span></td><td><span class="circ"></span></td></tr>
+  <tr><td class="n">4</td><td><span class="circ"></span></td><td><span class="circ"></span></td><td><span class="circ"></span></td><td><span class="circ"></span></td></tr>
+  <tr><td class="n">5</td><td><span class="circ"></span></td><td><span class="circ"></span></td><td><span class="circ"></span></td><td><span class="circ"></span></td></tr>
+  <tr><td class="n">6</td><td><span class="circ"></span></td><td><span class="circ"></span></td><td><span class="circ"></span></td><td><span class="circ"></span></td></tr>
+  <tr><td class="n">7</td><td><span class="circ"></span></td><td><span class="circ"></span></td><td><span class="circ"></span></td><td><span class="circ"></span></td></tr>
+  <tr><td class="n">8</td><td><span class="circ"></span></td><td><span class="circ"></span></td><td><span class="circ"></span></td><td><span class="circ"></span></td></tr>
+</table>
+
+<table class="ass">
+  <tr>
+    <td style="width:62%">Acadêmico (a):</td>
+    <td style="width:38%">Matrícula:</td>
+  </tr>
+  <tr>
+    <td colspan="2" style="height:1.1cm">Assinatura:</td>
+  </tr>
+</table>
+
+<p class="fim">Boa Prova!</p>
+
+
+</td></tr></tbody>
+</table>
+</body>
+</html>
